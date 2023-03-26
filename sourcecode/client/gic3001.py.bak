@@ -1,0 +1,6 @@
+import serial
+import time
+ser = serial.Serial('COM3', 9600, timeout=0)
+print ser.portstr
+print ser.writable()
+print ser.write('1')
